@@ -1,0 +1,54 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FE;
+            color: #2D3436;
+        }
+
+        /* Kira Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(1.5deg); }
+        }
+        .animate-kira-float {
+            animation: float 3.5s ease-in-out infinite;
+        }
+
+        /* Pulse glow for orb */
+        @keyframes orbGlow {
+            0%, 100% { filter: drop-shadow(0 0 4px #74B9FF); opacity: 0.9; }
+            50% { filter: drop-shadow(0 0 12px #A29BFE); opacity: 1; }
+        }
+        .orb-glow {
+            animation: orbGlow 2s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F2F6;
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A29BFE;
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6C5CE7;
+        }
+
+        /* Flashcard 3D flip effect */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .transform-style-3d {
+            transform-style: preserve-3d;
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
